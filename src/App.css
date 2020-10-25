@@ -4,18 +4,26 @@ body {
   color: #fff;
 }
 
-input[type="text"] {
-  width: 150px;
-  display: block;
-  margin-bottom: 10px;
-  background-color: yellow;
+label {
+  text-transform: uppercase;
 }
 
-/* @media (prefers-color-scheme: dark) {
+input {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+input[type="button"] {
+  margin:5px 5px 5px 0;
+}
+
+@media (prefers-color-scheme: dark) {
   html {
     filter: invert(1) hue-rotate(180deg);
   }
-} */
+}
 
 .App {
   margin: 10px;
