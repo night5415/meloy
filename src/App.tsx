@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { ChangeEvent, useState } from "react";
+import Widget from "./components/widget";
+import "./App.css";
+import * as firebase from "firebase/app";
+import "firebase/firebase-database";
 
 function App() {
+  const [firstName, setFirstName] = useState(""),
+    [lastName, setLastName] = useState(""),
+    first = (e: ChangeEvent<HTMLInputElement>) => {
+      setFirstName(e.target.value);
+    },
+    last = (e: ChangeEvent<HTMLInputElement>) => {
+      setLastName(e.target.value);
+    },
+    onSave = () => {
+      var x = {
+        FirstName: firstName,
+        LastName: lastName,
+      };
+      firebase.database().ref("users/2").set(x);
+    };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Widget labelFor="First_Name" onValChange={first}></Widget>
+      <Widget labelFor="Last_Name" onValChange={last}></Widget>
+      <input type="button" value="Click" onClick={onSave} />
     </div>
   );
 }
