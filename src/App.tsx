@@ -1,12 +1,13 @@
-import './App.css'
+import { Content, Footer, Header } from "./components";
+import { MainLayout } from "./layouts";
 
 function App() {
   return (
-    <>
-      <div>
-      </div>
-      <h1>Working on Something Magical</h1>
-    </>
+    <MainLayout>
+      <Header />
+      <Content />
+      <Footer />
+    </MainLayout>
   )
 }
 
