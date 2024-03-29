@@ -1,13 +1,12 @@
-import { Content, Footer, Header } from "./components";
-import { MainLayout } from "./layouts";
+import router from "./router/router"
+import {
+  RouterProvider,
+} from "react-router-dom";
+
 
 function App() {
   return (
-    <MainLayout>
-      <Header />
-      <Content />
-      <Footer />
-    </MainLayout>
+    <RouterProvider router={router} />
   )
 }
 
