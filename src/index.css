@@ -23,19 +23,20 @@
    header {
      display: flex;
      align-items: center;
-     width: 100vw;
+     padding: 0 10px;
      background-color: var(--primary-color);
      grid-area: header;
    }
 
    footer {
-     width: 100vw;
      background-color: var(--primary-color);
      grid-area: footer;
    }
 
    main {
-     width: 100vw;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
      background-color: var(--secondary-color);
      grid-area: main;
    }
@@ -44,12 +45,32 @@
      display: grid;
      height: 100vh;
      background-color: var(--secondary-color);
-     grid-template-columns: 25vw 25vw 25vw 25vw;
+     grid-template-columns: 100px repeat(4, 1fr);
      grid-template-rows: 50px calc(100vh - 70px) 20px;
      grid-template-areas:
-       "header header header header"
-       "main main main main"
-       "footer footer footer footer";
+       "navigation header header header header"
+       "navigation main main main main"
+       "navigation footer footer footer footer";
+     transition: 300ms;
+   }
+
+   .layout nav {
+     display: flex;
+     gap: 1rem;
+     flex-direction: column;
+     background-color: var(--primary-color);
+     grid-area: navigation;
+     overflow: hidden;
+   }
+
+   .layout nav a {
+     padding: 0 10px;
+   }
+
+   @media screen and (max-width: 600px) {
+     .layout {
+       grid-template-columns: 0 repeat(4, 1fr);
+     }
    }
 
    @media (prefers-color-scheme: light) {

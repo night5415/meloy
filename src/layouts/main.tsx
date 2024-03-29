@@ -1,12 +1,15 @@
-import { ReactElement } from "react";
+import { Header, Navigation, Content, Footer } from "../components";
 
 interface IMainLayoutProps {
-    children: ReactElement[]
+
 }
 
-function MainLayout({ children }: IMainLayoutProps) {
+function MainLayout({ }: IMainLayoutProps) {
     return (<div className="layout">
-        {children}
+        <Header />
+        <Navigation />
+        <Content />
+        <Footer />
     </div>);
 }
 

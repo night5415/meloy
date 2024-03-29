@@ -1,6 +1,8 @@
+import { Outlet } from 'react-router-dom';
+
 function Content() {
     return (<main>
-        <h1>Working on Something Magical!</h1>
+        <Outlet />
     </main>);
 }
 
