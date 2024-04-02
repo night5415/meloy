@@ -1,0 +1,9 @@
+:root {
+    font-family: "Rye", serif;
+    --primary-color: #222831;
+    --secondary-color: #31363F;
+    --text-primary: #EEEEEE;
+    --text-secondary: #76ABAE;
+    --sm: 600px;
+    --lg: 1600px;
+}
