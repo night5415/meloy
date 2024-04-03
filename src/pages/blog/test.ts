@@ -1,0 +1,47 @@
+interface IBlogPost {
+    id: number;
+    body: string;
+    title: string;
+    minuteRead: number;
+}
+
+const blogPosts: IBlogPost[] = [
+    {
+        id: 1,
+        minuteRead: 20,
+        title: 'Transparency',
+        body: `
+                Sem dictumst netus ac massa inceptos accumsan tortor vestibulum feugiat enim natoque ullamcorper a ullamcorper cras litora sit vivamus neque viverra ad ligula vestibulum adipiscing vestibulum parturient a. A a convallis non mi feugiat vestibulum scelerisque mus bibendum fermentum posuere vestibulum nec dignissim in at purus suspendisse mi aptent dignissim dui ipsum eu adipiscing suspendisse. Curabitur non eu lacinia fermentum mauris mi id enim habitant consequat feugiat condimentum vestibulum conubia egestas orci parturient ut cursus lorem mi id. Imperdiet morbi a imperdiet suspendisse integer dignissim est sapien parturient proin a malesuada erat nam massa etiam suspendisse.
+
+                Consequat nullam condimentum phasellus hac bibendum quisque parturient a enim a rutrum ullamcorper per justo consectetur dolor a vehicula venenatis ad adipiscing praesent dui praesent eros. A a non quis inceptos eu consectetur enim a curae a venenatis tempor habitant quis blandit condimentum a mi leo ultricies aliquam ultrices urna consectetur ullamcorper parturient. Penatibus lectus ipsum a torquent scelerisque pulvinar consectetur ut habitasse scelerisque consectetur urna feugiat at sagittis tortor rhoncus parturient nec volutpat aliquam adipiscing parturient natoque. Molestie ullamcorper aenean auctor odio cras condimentum a ridiculus accumsan dictum condimentum a pretium rhoncus mus lobortis consectetur non aenean a purus malesuada aliquam penatibus eu quisque suscipit. Netus massa montes a pretium scelerisque lacinia vitae lobortis tempor sociosqu orci parturient ad nostra vestibulum arcu et adipiscing scelerisque fusce proin a mi a nisi condimentum integer...
+
+                Praesent sagittis parturient quam dapibus venenatis a class at dictum scelerisque litora est condimentum nec ligula a hendrerit vestibulum suspendisse adipiscing cum condimentum nisi. Dolor aliquam dictumst gravida aptent parturient vivamus cubilia ac sociosqu quis condimentum vestibulum venenatis vivamus mi torquent parturient a odio vestibulum quis a adipiscing ridiculus. Gravida a scelerisque montes amet cras eu a ultrices vestibulum euismod in nostra donec mus leo ullamcorper class...
+
+                Nec placerat condimentum mus nisi congue etiam sem parturient potenti litora vestibulum natoque enim magnis accumsan. Donec parturient molestie scelerisque suspendisse suscipit primis leo elementum consectetur porta elit purus ac et id habitant vestibulum habitasse ante sodales parturient volutpat erat aptent proin lacus aptent. Vestibulum augue nec consectetur cubilia cras class a pharetra libero platea scelerisque ullamcorper habitasse quisque id per ultrices habitant. Ligula ad magnis a adipiscing turpis a dapibus phasellus volutpat mi semper eget ultrices blandit mollis id feugiat porttitor per. Eros suspendisse a urna consectetur ac sed a etiam a vel sapien taciti mauris a dolor tempus. Imperdiet luctus per dui rhoncus at duis feugiat vel dapibus a ullamcorper venenatis congue dictum...
+
+                In cras pulvinar adipiscing parturient a consectetur vestibulum gravida tellus curae in eget a inceptos ac potenti consectetur. Sociis suspendisse dolor varius condimentum parturient nec rutrum quam magnis dolor parturient consequat vestibulum a habitant leo per ultrices vestibulum a a potenti aliquet ut sodales magna eu eu. Ullamcorper pharetra ad vitae egestas duis erat gravida nunc habitasse semper blandit posuere vel consequat eget vestibulum parturient interdum vestibulum platea mus. Sociis scelerisque imperdiet montes proin gravida vivamus duis vestibulum dui fusce euismod elementum molestie ac a sagittis dui augue est scelerisque. Lorem consectetur diam ac tristique hac viverra imperdiet a a dignissim malesuada eu vestibulum nascetur adipiscing ac gravida parturient diam. Eu a cursus facilisis maecenas a parturient commodo posuere dolor vitae ullamcorper varius diam interdum varius a imperdiet bibendum porttitor platea adipiscing urna per euismod nec dictumst curae natoque...
+
+                Est suscipit nam vestibulum consectetur nec leo a aliquam mus per at et ut dui scelerisque nascetur nisl. Vitae nulla natoque nostra curabitur a nisi elit arcu consectetur ridiculus class non suspendisse fames nec elit dapibus. Commodo purus eu sed ullamcorper consequat cras class ad ad magna per nisl a ullamcorper. Varius posuere mi libero porttitor ac tellus neque malesuada eu adipiscing quisque vitae vel nulla euismod a sociosqu commodo parturient lorem ultricies adipiscing a dui. Diam dolor urna pulvinar vivamus blandit cursus fermentum mus ad augue eros est amet ultricies phasellus lobortis consectetur a eu. Purus id eu arcu arcu parturient parturient maecenas a suspendisse a nunc nascetur per sit scelerisque aptent a sem nulla orci ac porta sodales dis condimentum...
+
+                Donec suspendisse mollis feugiat consectetur nunc massa duis euismod vestibulum a senectus adipiscing nisl cursus dictumst dui est eget nam a commodo adipiscing in scelerisque nibh. Nullam vestibulum praesent ac ad venenatis lacinia massa leo id dui ad et eu primis mi at sociis tristique. Aliquam adipiscing fermentum ut a justo integer parturient condimentum consequat facilisi gravida iaculis sit parturient eu. Euismod in at in est ultricies orci elit a arcu litora cubilia a leo purus. Vivamus iaculis consectetur habitasse accumsan parturient purus placerat vestibulum nostra dui ridiculus a scelerisque vestibulum orci donec consectetur neque pretium molestie parturient a in a.
+            `
+    },
+    {
+        id: 2,
+        minuteRead: 15,
+        title: 'CSS variables',
+        body: `
+            Pharetra feugiat eget condimentum a metus fusce purus mollis curabitur parturient mi habitant scelerisque a parturient augue in nibh consequat posuere neque laoreet curabitur massa cum consequat nisi cum. A sem a at per ac parturient parturient vestibulum felis eu adipiscing proin a adipiscing condimentum condimentum cum risus elementum a pretium ac. Est ornare eget a ridiculus ultricies a platea nibh adipiscing faucibus nascetur a a adipiscing curabitur. Enim ullamcorper magna phasellus mi at a ad parturient ut ante a litora sit ullamcorper massa nam...
+
+Ad commodo ac nibh sodales egestas eget sapien enim pretium condimentum purus a duis est nibh ipsum a. Parturient potenti ante suspendisse hac consectetur sodales ullamcorper donec etiam torquent ultrices volutpat consectetur felis duis augue lacus mi condimentum imperdiet laoreet lobortis. Montes accumsan ut lacinia volutpat luctus ante donec mauris donec natoque gravida sociosqu suspendisse conubia vestibulum adipiscing ullamcorper fermentum amet scelerisque rutrum a. Facilisi at torquent phasellus scelerisque rhoncus magnis ac ullamcorper ut imperdiet bibendum facilisis a egestas penatibus mi sem dictumst erat eu hac ullamcorper suspendisse. Nascetur class suspendisse lacus nisi eleifend nunc arcu fames condimentum enim consectetur suspendisse ligula ridiculus a mi parturient vestibulum scelerisque a suspendisse nam id. Curae a aenean ligula scelerisque ligula nisl erat fames mi himenaeos mi aenean blandit ac leo a vehicula consequat a ullamcorper eu diam...
+
+Rhoncus lobortis erat ultrices elementum ut adipiscing vestibulum magna elit ligula nisi rutrum a suspendisse penatibus vehicula per a. Litora vestibulum mi a blandit scelerisque iaculis nisi egestas tristique quis congue enim et phasellus dui quis curabitur fermentum urna. Ridiculus ac eros ultrices scelerisque fames ac ullamcorper a vestibulum tempus parturient a a netus vestibulum a. Elit a ipsum hac sit consectetur ante adipiscing convallis curabitur nam magna urna aliquet et a ad a ante a condimentum...
+
+Vulputate nibh facilisi nam volutpat fusce fames diam pulvinar montes suspendisse lacinia risus mi hendrerit eu. Rutrum at sodales lacinia fusce a adipiscing vel consequat a consectetur a magna adipiscing iaculis scelerisque luctus nascetur a adipiscing cursus aliquam a ullamcorper hac id eu. Ut vestibulum proin risus conubia facilisis ullamcorper nibh commodo parturient fringilla urna condimentum sit vestibulum dictum facilisi ante. Volutpat a a velit suspendisse sagittis sagittis sociis a a hac ad dis eget rutrum adipiscing donec lacus curabitur...
+
+In ullamcorper eu morbi ac pharetra himenaeos a mi blandit ligula parturient elementum eleifend nulla condimentum tempus cum vestibulum massa donec a nulla pretium fringilla a cum a massa. Per leo condimentum mus vestibulum congue iaculis a risus eros sociosqu urna scelerisque faucibus a dictum convallis ut tincidunt quisque. Gravida convallis feugiat magna parturient sociosqu orci congue adipiscing mollis mi vestibulum lacus adipiscing nullam lectus parturient a morbi mauris penatibus ullamcorper natoque a tincidunt molestie. Scelerisque suspendisse ullamcorper eleifend a diam phasellus turpis nec a sagittis ac torquent a a condimentum a nam. Posuere nec commodo cubilia tempor non scelerisque erat dolor conubia fusce a a aptent in suspendisse nulla. Vivamus quam integer dapibus ac ad suscipit parturient mus sagittis a netus adipiscing imperdiet est per scelerisque a nisl phasellus...
+            `
+    }
+]
+
+export { blogPosts }
