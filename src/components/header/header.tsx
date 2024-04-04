@@ -1,7 +1,11 @@
+import { H1 } from "../typograph";
+import logo from '/me_150.jpg';
+
 function Header() {
     return (
         <header>
-            <h1>Cowboy Coder</h1>
+            <img src={logo} alt="logo" />
+            <H1>Cowboy Coder</H1>
         </header>
     );
 }

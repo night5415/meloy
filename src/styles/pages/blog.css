@@ -1,9 +1,3 @@
 .blog-card {
     padding: 1rem;
 }
-
-.blog-card p {
-    font-family: "Fira Code", monospace;
-    margin: 1rem;
-    line-height: 1.3;
-}

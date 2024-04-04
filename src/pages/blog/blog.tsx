@@ -1,5 +1,5 @@
 
-import '../../styles/pages/blog.css'
+import '../../styles/pages/blog.css';
 import { BlogCard, BlogHeader, BlogPost } from "./components";
 import { blogPosts } from "./test";
 

@@ -1,0 +1,5 @@
+.empty-content {
+    display: flex;
+    align-items: center;
+    flex: 1
+}

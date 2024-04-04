@@ -1,7 +1,9 @@
-const Post = ({ body }: { body: string }) => {
-    var paragraphs = body.split('...');
+import { Paragraph } from "../../../components/typograph";
 
-    return paragraphs.map((para, index) => <p key={index}>{para}</p>)
+const Post = ({ body }: { body: string }) => {
+    const paragraphs = body.split('...');
+
+    return paragraphs.map((para, index) => <Paragraph key={index}>{para}</Paragraph>)
 }
 
 export { Post as default }

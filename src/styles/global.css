@@ -4,6 +4,7 @@
 
 body,
 html {
+  font-size: 16px;
   margin: 0;
   padding: 0;
   color: var(--text-primary);
@@ -13,11 +14,15 @@ html {
 
 header {
   display: flex;
+  gap: 1rem;
   align-items: center;
   padding: 0 10px;
   background-color: var(--primary-color);
   grid-area: header;
+}
 
+header img {
+  border-radius: 50%;
 }
 
 footer {
@@ -27,7 +32,8 @@ footer {
 
 main {
   display: flex;
-  background-color: var(--secondary-color);
+  flex-direction: column;
+  background-color: var(--primary-color);
   grid-area: main;
   overflow: hidden;
   overflow-y: auto;
@@ -39,27 +45,43 @@ main {
   margin: 0 auto;
   background-color: var(--secondary-color);
   grid-template-columns: 150px repeat(4, 1fr);
-  grid-template-rows: 150px calc(100vh - 170px) 20px;
+  grid-template-rows: 175px calc(100vh - 175px) 0px;
   grid-template-areas:
-    "navigation header header header header"
+    "header header header header header"
     "navigation main main main main"
     "navigation footer footer footer footer";
-  transition: grid-template-columns 150ms;
+  transition: grid-template-columns 150ms, grid-template-rows 500ms ease;
 }
 
 .layout nav {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 1rem;
   flex-direction: column;
   background-color: var(--primary-color);
   grid-area: navigation;
   overflow: hidden;
+  position: relative;
+}
+
+.layout nav:after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  bottom: 15%;
+  right: 10px;
+  height: 75%;
+  width: 1px;
 }
 
 .layout nav a {
-  padding: 0 10px;
+  padding: 0 15px;
   text-decoration: none;
   color: var(--text-primary);
+}
+
+.layout nav a:hover {
+  padding: 0 15px;
+  text-decoration: none;
+  color: var(--text-secondary);
 }
