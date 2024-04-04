@@ -1,0 +1,9 @@
+.headerOne {
+    font-size: 4rem;
+}
+
+.paragraph {
+    font-family: "Fira Code", monospace;
+    margin: 1rem;
+    line-height: 1.3;
+}

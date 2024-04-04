@@ -1,5 +1,8 @@
+import { H3 } from "../../../components/typograph";
+
+
 function BlogHeader({ title }: { title: string }) {
-    return (<h3>{title}</h3>);
+    return (<H3>{title}</H3>);
 }
 
 export default BlogHeader;
