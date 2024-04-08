@@ -5,7 +5,7 @@ function Header() {
     return (
         <header>
             <img src={logo} alt="logo" />
-            <H1>Cowboy Coder</H1>
+            <H1>Cowboy Coder </H1>
         </header>
     );
 }

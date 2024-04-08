@@ -1,3 +1,7 @@
 .layout {
     border-right: 15px solid var(--primary-color);
 }
+
+[data-mobile] {
+    display: revert;
+}

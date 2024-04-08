@@ -1,4 +1,4 @@
-import { Header, Navigation, Content, Footer } from "../components";
+import { Header, Navigation, Content, Footer, MobileNavigation } from "../components";
 
 interface IMainLayoutProps {
 
@@ -10,6 +10,7 @@ function MainLayout({ }: IMainLayoutProps) {
         <Navigation />
         <Content />
         <Footer />
+        <MobileNavigation />
     </div>);
 }
 
