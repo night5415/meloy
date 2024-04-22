@@ -29,11 +29,11 @@ type MobileMenuProps = {
 const MobileMenu = forwardRef<HTMLDialogElement, MobileMenuProps>((props, ref) => {
     const { onMenuClick } = props;
 
-    return <dialog className="mobile-nav" ref={ref}>
+    return <dialog data-mobile className="mobile-nav" ref={ref}>
         <nav onClick={onMenuClick}>
             <Link to="/">Home</Link>
             <Link to="/blog/">Blog</Link>
-            <Link to="/html/">HTML</Link>
+            <Link to="/glass/">Glass</Link>
             <Link to="/css/">CSS</Link>
             <Link to="/javascript/">JavaScript</Link>
             <Link to="/settings/">Settings</Link>
@@ -50,7 +50,7 @@ const MobileNavigation = () => {
                 console.error(`dialog ref is null`);
                 return;
             }
-            navigator.vibrate(200);
+            navigator.vibrate(50);
             current.showModal();
         },
         onMenuClick = () => {
@@ -59,7 +59,7 @@ const MobileNavigation = () => {
                 console.error(`dialog ref is null`);
                 return;
             }
-            navigator.vibrate(200);
+            navigator.vibrate(50);
             current.close();
         };
 

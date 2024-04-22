@@ -48,7 +48,7 @@ main {
   margin: 0 auto;
   background-color: var(--secondary-color);
   grid-template-columns: 150px repeat(4, 1fr);
-  grid-template-rows: 175px calc(100svh - 200px) 25px;
+  grid-template-rows: 175px calc(100dvh - 200px) 25px;
   grid-template-areas:
     "header header header header header"
     "navigation main main main main"
@@ -56,7 +56,7 @@ main {
   transition: grid-template-columns 150ms, grid-template-rows 5ms ease;
 }
 
-.layout>nav {
+.layout > nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -67,7 +67,7 @@ main {
   position: relative;
 }
 
-.layout>nav:after {
+.layout > nav:after {
   content: "";
   background: #fff;
   position: absolute;
@@ -77,21 +77,21 @@ main {
   width: 1px;
 }
 
-.layout>nav a {
+.layout > nav a {
   position: relative;
   padding: 0 15px;
   text-decoration: none;
   color: var(--text-primary);
 }
 
-.layout>nav a:hover {
+.layout > nav a:hover {
   padding: 0 15px;
   text-decoration: none;
   color: var(--text-secondary);
 }
 
-.layout>nav a[data-active="true"]::after {
-  content: '';
+.layout > nav a[data-active="true"]::after {
+  content: "";
   position: absolute;
   width: 100px;
   height: 2px;
@@ -121,12 +121,22 @@ main {
 }
 
 ::backdrop {
-  background-image: linear-gradient(45deg,
-      magenta,
-      rebeccapurple,
-      dodgerblue,
-      green);
+  background-image: linear-gradient(
+    45deg,
+    magenta,
+    rebeccapurple,
+    dodgerblue,
+    green
+  );
   opacity: 0.75;
   filter: grayscale(10);
   box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+
+dialog {
+  background-color: #0017ff00;
+  backdrop-filter: blur(5px);
+  box-shadow: inset black 0px 0px 60px -19px;
+  border: none;
+  border-radius: 6px;
 }

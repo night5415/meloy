@@ -7,7 +7,7 @@ function Navigation() {
             <nav>
                 <Link to="/">Home</Link>
                 <Link to="/blog/">Blog</Link>
-                <Link to="/html/">HTML</Link>
+                <Link to="/glass/">Glass</Link>
                 <Link to="/css/">CSS</Link>
                 <Link to="/javascript/">JavaScript</Link>
                 <Link to="/settings/">Settings</Link>
